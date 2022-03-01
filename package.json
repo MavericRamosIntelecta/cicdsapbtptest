@@ -15,7 +15,11 @@
         "@sap/ux-ui5-tooling": "1",
         "@sap/ui5-builder-webide-extension": "^1.1.7",
         "ui5-task-zipper": "^0.3.1",
-        "mbt": "^1.0.15"
+        "mbt": "^1.0.15",
+        "karma": "^5.0.4",
+        "karma-chrome-launcher": "^3.1.0",
+        "karma-coverage": "^2.0.2",
+        "karma-ui5": "^2.1.0"
     },
     "scripts": {
         "start": "fiori run --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#projectcicd-display\"",
@@ -29,7 +33,9 @@
         "int-tests": "fiori run --open test/integration/opaTests.qunit.html",
         "build:cf": "ui5 build preload --clean-dest --config ui5-deploy.yaml --include-task=generateManifestBundle generateCachebusterInfo",
         "build:mta": "rimraf resources mta_archives && mbt build",
-        "undeploy": "cf undeploy projectcicd --delete-services --delete-service-keys"
+        "undeploy": "cf undeploy projectcicd --delete-services --delete-service-keys",
+        "test": "npm run karma-ci",
+        "karma-ci": "karma start karma-ci.conf.js"
     },
     "ui5": {
         "dependencies": [
