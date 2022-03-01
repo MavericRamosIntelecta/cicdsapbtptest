@@ -10,6 +10,7 @@
                 <Page id="page" title="{i18n>title}">
                     <content>
                         <Label id="label1" text="Hola Mundo"></Label>
+                        <Label id="label2" text="Hola Mundo 2"></Label>
                     </content>
                 </Page>
             </pages>
