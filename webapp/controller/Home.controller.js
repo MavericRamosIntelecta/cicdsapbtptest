@@ -10,6 +10,10 @@ sap.ui.define([
         return Controller.extend("projectcicd.controller.Home", {
             onInit: function () {
 
+            },
+
+            fnEvaluarAdmin(sUserName){
+                return true;
             }
         });
     });
