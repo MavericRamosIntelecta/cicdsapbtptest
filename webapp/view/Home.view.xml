@@ -9,7 +9,7 @@
             <pages>
                 <Page id="page" title="{i18n>title}">
                     <content>
-                        <Label id="label1" text="Hola Mundo"></Label>
+                        <Label id="label1" text="Hello from TMS Node Acceptance"></Label>
                         <Label id="label2" text=" Otro Stage"></Label>
                     </content>
                 </Page>
